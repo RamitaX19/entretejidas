@@ -105,15 +105,16 @@ body {
   }
 
   .cursos {
-    scroll-margin-top: 120px;
+    scroll-margin-top: 140px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 15px;
+    padding-bottom: 30px;
     background-color: #1111;
     margin: 20%;
     margin-top: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 0;
     border-radius: 20px;
   }
 
@@ -200,8 +201,8 @@ body {
   
   .slide-container {
     position: relative;
-    width: 500px;
-    height:400px;
+    width: 650px;
+    height:550px;
     overflow: hidden;
   }
   
@@ -227,17 +228,67 @@ body {
     border: white; 
   }
 
-  .textoFNL {
+  .TXT_FNL {
+    display: flex;
+    align-items: flex-start;
     text-align: center;
+    justify-content: center;
+    margin: 20px auto;
+    gap: 10px;
+    padding: 10px;
+    padding-right: 15px;
+    background-color: #1111;
+    border-radius: 5px;
+    width: 60%;
+  }
+  .textoFNL {
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
-    margin-top: 0;
+    padding-top: 8px;
   }
-
-  .botonIG {
-    display: flex;
+  .botonesRS {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+    .botonFB {
     padding: 10px 20px;
-    margin: auto;
+    font-size: 20px;
+    background-color: #1877F2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s ease, color 0.5s ease;
+  }
+  .botonFB:hover {
+    transform: scale(1.1);
+  }
+  .botonYT {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #FF0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s ease, color 0.5s ease;
+  }
+  .botonYT:hover {
+    transform: scale(1.1);
+  }
+  .botonTK {
+    padding: 10px 20px;
+    font-size: 20px;
+    background: linear-gradient(45deg,#010101, #FE2C55);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s ease, color 0.5s ease;
+  }
+  .botonTK:hover {
+    transform: scale(1.1);
+  }
+  .botonIG {
+    padding: 10px 20px;
     font-size: 20px;
     background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
     color: white;
@@ -249,16 +300,45 @@ body {
     transform: scale(1.1);
   }
 
+  .venta {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .containerVENTA {
+    background-color: #1111;
+    padding: 15px;
+    color: #444;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+        margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .ventaTXT {
+    margin: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+  }
+  .ventaTIT {
+    font-size: 40px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .ventaPF {
+    font-size: 18px;
+  }
+
 .tienda {
   padding-left: 4rem;
   padding-right: 4rem;
 }
 .containerSHOP {
   background-color: #1111;
-  padding: 15px;
+  padding: 35px;
   color: #444;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
+  margin-bottom: 20px;
 }
 .envio {
   display: inline-block;
@@ -267,6 +347,7 @@ body {
   border-radius: 10px;
   padding: 6px;
   margin-top: 2px;
+  margin-bottom: 25px;
 }
 .botonMAPS {
   border: none;
@@ -283,7 +364,7 @@ body {
 }
 
 .CONTACTO {
-  scroll-margin-top: 80px;
+  scroll-margin-top: 100px;
   padding-left: 4rem;
   padding-right: 4rem;
 }

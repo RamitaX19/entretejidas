@@ -77,7 +77,8 @@
 
     .cursoPF {
         margin: 5px;
-        margin-top: 1px;
+        margin-top: 10px;
+        padding-bottom: 5px;
         font-size: 12px;
     }
 
@@ -94,8 +95,14 @@
         border-radius: 10px;
     }
 
+    .TXT_FNL {
+        width: 80%;
+        display: grid;
+        text-align: center;
+    }
+
     .botonIG {
-        flex-direction: column;
+        margin: auto;
     }
 
     .envios {
