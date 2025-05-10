@@ -1,0 +1,139 @@
+@media (max-width: 768px){
+    .header {
+        flex-direction: column;
+        
+    }
+    
+    .logo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 15px;
+    }
+
+    .log {
+        display: none;
+    }
+
+    .titulo {
+        display: flex;
+        width: 85%;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .iconos {
+        display: none;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .mid {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .TXT {
+        padding: 0;
+        margin: 0;
+    }
+
+    .TIT, .PF {
+        text-align: center;
+    }
+    .lanas {
+        width: 80%;
+        padding: 10px;
+        border-radius: 30px;
+    }
+
+    .cursos {
+        flex-direction: column;
+        margin: 30px;
+
+        align-items: center;
+        padding: 10px;
+    }
+
+    .cursoTXT {
+        padding: 0;
+        text-align: center;
+        align-items: center;
+    }
+
+    .cursoTIT {
+        font-size: 35px;
+        margin-top: 2px;
+    }
+
+    .cursoPF {
+        margin: 5px;
+        margin-top: 1px;
+        font-size: 12px;
+    }
+
+    .botonWSP {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        font-size: 15px;
+    }
+
+    .slide-container {
+        width: 450px;
+        height: 250px;
+        border-radius: 10px;
+    }
+
+    .botonIG {
+        flex-direction: column;
+    }
+
+    .envios {
+        display: flex;
+        width: 70%;
+        height: auto;
+    }
+
+    .containerCONT {
+        font-size: 15px;
+        padding-left: 15px;
+    }
+
+    .containerPIE {
+        flex-direction: column;
+    }
+    .primerPT {
+        text-align: center;
+    }
+    .contactos {
+        font-size: 20px;
+    }
+    .titFL {
+        font-size: 25px;
+    }
+    .PFL {
+        font-size: 15px;
+    }
+    .iconosFL {
+        justify-content: center;
+    }
+    .iconFL {
+        font-size: 20px;
+    }
+    .contFL {
+        display: none;
+        text-align: center;
+    }
+}
