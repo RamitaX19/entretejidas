@@ -89,6 +89,21 @@
         font-size: 15px;
     }
 
+    .containerVENTA {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .ventaTIT {
+        font-size: 35px;
+    }
+    .ventaPF {
+        font-size: 15px;
+    }
+    .containerSHOP {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
     .slide-container {
         width: 450px;
         height: 250px;
