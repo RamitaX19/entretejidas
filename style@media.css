@@ -9,6 +9,7 @@
         align-items: center;
         text-align: center;
         padding-top: 15px;
+        padding-bottom: 15px;
     }
 
     .log {
@@ -17,10 +18,7 @@
 
     .titulo {
         display: flex;
-        width: 85%;
         text-align: center;
-        margin-top: 0;
-        margin-bottom: 15px;
     }
 
     .nav {
