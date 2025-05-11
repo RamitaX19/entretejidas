@@ -1,7 +1,3 @@
-document.getElementById("botonWSP").addEventListener("click", function() {
-    window.open("https://wa.me/5491144131253", "_blank");
-});
-
 //SLIDES
 const slides = document.querySelectorAll('.slide');
 let index = 0;
@@ -20,8 +16,31 @@ document.querySelector('.next').onclick = () => {
     index = (index + 1) % slides.length;
     showSlide(index);
 };
+/////////////////////////////////////////////////////////
+const slidesP = document.querySelectorAll('#slider2 .slidePD');
+let indexP = 0;
+
+function showSlideP(i) {
+    slidesP.forEach(slide => slide.classList.remove('showP'));
+    slidesP[i].classList.add('showP');
+}
+
+document.querySelector('#slider2 .prevP').onclick = () => {
+    indexP = (indexP - 1 + slidesP.length) % slidesP.length;
+    showSlideP(indexP);
+};
+
+document.querySelector('#slider2 .nextP').onclick = () => {
+    indexP = (indexP + 1) % slidesP.length;
+    showSlideP(indexP);
+};
+
+showSlideP(indexP);
 
 //BOTON-LINK
+document.getElementById("botonWSP").addEventListener("click", function() {
+    window.open("https://wa.me/5491144131253", "_blank");
+});
 document.getElementById("botonIG").addEventListener("click", function() {
     window.open("https://www.instagram.com/entretejidas_crochet/", "_blank");
 });
