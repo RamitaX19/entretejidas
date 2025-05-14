@@ -235,15 +235,10 @@ body {
     transition: opacity 0.5s ease;
     border-radius: 10px;
   }
-  .imgPROD {
-    width: 100%;
-    height: 100%;
-  }
-  
   .slide.show {
     opacity: 1;
   }
-  .slidePD.showP {
+  .slidePD.show {
     opacity: 1;
   }
   
