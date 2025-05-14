@@ -109,15 +109,20 @@
         height: 250px;
         border-radius: 10px;
     }
+    .slide-containerP {
+        width: 450px;
+        height: 250px;
+        border-radius: 10px;
+    }
+    .sliderP {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 
     .TXT_FNL {
         width: 80%;
         display: grid;
         text-align: center;
-    }
-
-    .botonIG {
-        margin: auto;
     }
 
     .envios {
@@ -155,10 +160,5 @@
     .contFL {
         display: none;
         text-align: center;
-    }
-    .slide-containerP {
-        width: 450px;
-        height: 250px;
-        border-radius: 10px;
     }
 }
