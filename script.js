@@ -21,8 +21,8 @@ const slidesP = document.querySelectorAll('#slider2 .slidePD');
 let indexP = 0;
 
 function showSlideP(i) {
-    slidesP.forEach(slide => slide.classList.remove('showP'));
-    slidesP[i].classList.add('showP');
+    slidesP.forEach(slide => slide.classList.remove('show'));
+    slidesP[i].classList.add('show');
 }
 
 document.querySelector('#slider2 .prevP').onclick = () => {
