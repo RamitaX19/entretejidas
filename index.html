@@ -16,20 +16,29 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <meta name="apple-mobile-web-app-title" content="Entretejidas" />
   <link rel="manifest" href="/site.webmanifest" />
+
   <meta name="google-site-verification" content="FOSN7kwLRWIiGFZu-J2YUbMgr-veKpoIymAt7z2-qak" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
-  <title>Entretejidas Crochet - Tejidos artesanales y productos de mercería</title>
   <meta name="description" content="Entretejidas Crochet - Tejidos artesanales y productos de mercería. Tutoriales de tejido, productos hechos a mano y recursos para crochet.">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="style@media.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet">
+  <title>Entretejidas Crochet - Tejidos artesanales y productos de mercería</title>
 </head>
+
 <body>
   <header class="header"> <!--ENCABEZADO-->
     <logo class="logo">
@@ -40,6 +49,7 @@
       <a href="#">Inicio</a>
       <a href="#trabajos">Trabajos</a>
       <a href="#clases">Clases</a>
+      <a href="#tienda">Tienda</a>
       <a href="#contacto">Contacto</a>
     </nav>
     <div class="iconos">
@@ -58,15 +68,15 @@
     </div>
   </header>
 
-<selection id="inicio" class="mid"><!--TEXTO E IMAGEN-->
+<selection id="inicio" class="inicio"><!--TEXTO E IMAGEN-->
+  <div class="overlay"></div>
   <div class="TXT">
-    <h1 class="TIT">
+    <h1 class="TIT" clas>
       Descubri el arte de crear con tus manos
     </h1>
     <p class="PF">Hola esta es nuestra página somos Gaby y Vir. Cañuelas Bs.As, y Los Reartes, Córdoba. 
       Realizamos tejidos artesanales, con dedicación y mucho amor.</p>
   </div>
-  <img src="IMG_ET/lanas.png" alt="" class="lanas">
 </selection>
 
 <selection id="trabajos" class="trabajos">
@@ -75,27 +85,29 @@
       <h2 class="textoTIT">Mira algunos de nuestros trabajos</h2>
       <p class="textoPF">Amigurumis, decoraciones de todo tipo, prendas y mas.</p>
     </div>
-    <div class="slider" id="slider1"><!--SLIDES-->
-      <button class="prev">&#10094;</button>
-      <div class="slide-container">
-        <img src="IMG_ET/IMG1.png" class="slide show">
-        <img src="IMG_ET/IMG2.png" class="slide">
-        <img src="IMG_ET/IMG3.png" class="slide">
-        <img src="IMG_ET/IMG4.png" class="slide">
-        <img src="IMG_ET/IMG5.png" class="slide">
-        <img src="IMG_ET/IMG6.png" class="slide">
-        <img src="IMG_ET/IMG7.png" class="slide">
-        <img src="IMG_ET/IMG8.png" class="slide">
-        <img src="IMG_PROD/slide1.jpg" class="slide">
-        <img src="IMG_PROD/slide2.jpg" class="slide">
-        <img src="IMG_PROD/slide3.jpg" class="slide">
-        <img src="IMG_PROD/slide4.jpg" class="slide">
+    <div id="galeria1" class="galeriaTJ">
+      <a href="IMG_ET/IMG1.png" data-lightbox="fotos"><img src="IMG_ET/IMG1.png" alt=""></a>
+      <a href="IMG_ET/IMG2.png" data-lightbox="fotos"><img src="IMG_ET/IMG2.png" alt=""></a>
+      <a href="IMG_ET/IMG3.png" data-lightbox="fotos"><img src="IMG_ET/IMG3.png" alt=""></a>
+      <a href="IMG_ET/IMG4.png" data-lightbox="fotos"><img src="IMG_ET/IMG4.png" alt=""></a>
+      <div class="extra-img" id="extraImg2">
+      <a href="IMG_ET/IMG5.png" data-lightbox="fotos"><img src="IMG_ET/IMG5.png" alt=""></a>
+      <a href="IMG_ET/IMG6.png" data-lightbox="fotos"><img src="IMG_ET/IMG6.png" alt=""></a>
+      <a href="IMG_ET/IMG7.png" data-lightbox="fotos"><img src="IMG_ET/IMG7.png" alt=""></a>
+      <a href="IMG_ET/IMG8.png" data-lightbox="fotos"><img src="IMG_ET/IMG8.png" alt=""></a>
+      <a href="IMG_PROD/slide1.jpg" data-lightbox="fotos"><img src="IMG_PROD/slide1.jpg" alt=""></a>
+      <a href="IMG_PROD/slide2.jpg" data-lightbox="fotos"><img src="IMG_PROD/slide2.jpg" alt=""></a>
+      <a href="IMG_PROD/slide3.jpg" data-lightbox="fotos"><img src="IMG_PROD/slide3.jpg" alt=""></a>
+      <a href="IMG_PROD/slide4.jpg" data-lightbox="fotos"><img src="IMG_PROD/slide4.jpg" alt=""></a>
       </div>
-      <button class="next">&#10095;</button>
+    </div>
+    <div class="boton-container">
+      <button class="showMore" id="showMore2">Mostrar más</button>
+      <button class="showLess" id="showLess2" style="display: none">Mostrar menos</button>
     </div>
     <div class="TXT_FNL">
       <div class="textoFNL">
-      <p>Si te interesa aprender o ver mas visita nuestras redes sociales:</p>
+      <p>Si te interesa ver mas de nuestros trabajos visita nuestras redes sociales:</p>
       </div>
       <div class="botonesRS">
       <button id="botonIG" class="botonIG">Instagram</button>
@@ -108,11 +120,21 @@
 </selection>
 
 <selection id="clases" class="cursos"><!--CLASES-->
+  <div class="containerCURSO">
+    <img class="img_curso" src="IMG_CLASES/cursos-entretejidas.jpg" alt="">
   <div class="cursoTXT">
-    <h3 class="cursoTIT">Clases</h3>
-    <p class="cursoPF">¿Te gustaria aprender nuevas técnicas y compartir tu pasión por las manualidades en nuestro curso? Si sos de Los Reartes, Cordoba o por la zona escribime.</p>
+    <h2 class="cursoTIT">Clases</h2>
+    <div class="cursoPF">
+    <p class="PFC">¿Te gustaria aprender nuevas técnicas?</p>
+    <p class="PFC2">comparti tu pasión por las manualidades en nuestro curso.</p>
+    </div>
+    <div class="cursoPF2">
+      <p class="PFC">¿Sos de Los Reartes, Cordoba o por la zona?</p>
+      <p class="PFC2">Escribime y conocé todos los detalles sobre nuestras clases.</p>
+    </div>
+    <button id="botonWSP" class="botonWSP">WhatsApp</button>
   </div>
-  <button id="botonWSP" class="botonWSP">WhatsApp</button>
+  </div>
 </selection>
 
 <selection class="venta">
@@ -127,7 +149,7 @@
   </div>
 </selection>
 
-<selection class="tienda"><!--TIENDA-->
+<selection id="tienda" class="tienda"><!--TIENDA-->
   <div class="containerSHOP">
     <div class="tiendaTXT">
       <h2 class="tiendaTIT">¿Queres comprar lanas, productos o conocerme? Veni a nuestra merceria.</h2>
@@ -138,25 +160,27 @@
 </selection>
 
 <selection class="slideSHOP">
-  <div class="containerSLIDE">
+  <div class="containerTJ">
     <div class="textoPD">
-      <h2 class="tituloPD">Nuestros hilados y Mercería</h2>
+      <h2 class="tituloPD">Algunos de nuestros hilados y Mercería</h2>
     </div>
-    <div class="sliderP" id="slider2">
-      <button class="prevP">&#10094;</button>
-      <div class="slide-containerP">
-        <img src="IMG_PROD/prod1.jpg" class="slidePD show" >
-        <img src="IMG_PROD/prod2.jpg" class="slidePD">
-        <img src="IMG_PROD/prod3.jpg" class="slidePD">
-        <img src="IMG_PROD/prod4.jpg" class="slidePD">
-        <img src="IMG_PROD/prod5.jpg" class="slidePD">
-        <img src="IMG_PROD/prod6.jpg" class="slidePD">
-        <img src="IMG_PROD/prod7.jpg" class="slidePD">
-        <img src="IMG_PROD/prod8.jpg" class="slidePD">
-        <img src="IMG_PROD/prod9.jpg" class="slidePD">
-        <img src="IMG_PROD/prod10.jpg" class="slidePD">
+    <div id="galeria2" class="galeriaTJ">
+      <a href="IMG_PROD/prod1.jpg" data-lightbox="fotos"><img src="IMG_PROD/prod1.jpg" alt=""></a>
+      <a href="IMG_PROD/prod2.jpg" data-lightbox="fotos"><img src="IMG_PROD/prod2.jpg" alt=""></a>
+      <a href="IMG_PROD/prod3.jpg" data-lightbox="fotos"><img src="IMG_PROD/prod3.jpg" alt=""></a>
+      <a href="IMG_PROD/prod4.jpg" data-lightbox="fotos"><img src="IMG_PROD/prod4.jpg" alt=""></a>
+      <div class="extra-img" id="extraImg">
+      <a href="IMG_PROD/prod5.jpg" data-lightbox="fotos"><img src="IMG_PROD/prod5.jpg" alt=""></a>
+      <a href="IMG_PROD/prod6.jpg" data-lightbox="fotos"><img src="IMG_PROD/prod6.jpg" alt=""></a>
+      <a href="IMG_PROD/prod7.jpg" data-lightbox="fotos"><img src="IMG_PROD/prod7.jpg" alt=""></a>
+      <a href="IMG_PROD/prod8.jpg" data-lightbox="fotos"><img src="IMG_PROD/prod8.jpg" alt=""></a>
+      <a href="IMG_PROD/prod9.jpg" data-lightbox="fotos"><img src="IMG_PROD/prod9.jpg" alt=""></a>
+      <a href="IMG_PROD/prod10.jpg" data-lightbox="fotos"><img src="IMG_PROD/prod10.jpg" alt=""></a>
       </div>
-      <button class="nextP">&#10095;</button>
+    </div>
+    <div class="boton-container">
+      <button class="showMore" id="showMore">Mostrar más</button>
+      <button class="showLess" id="showLess" style="display: none">Mostrar menos</button>
     </div>
   </div>
 </selection>
@@ -294,11 +318,14 @@
           <a href="terminos.html">Términos y Condiciones</a>
           <a href="cookies.html">Política de Cookies</a>
         </div>
+        <p>Pagina desarrollada por: <a class="MiNum" href="https://wa.me/5491126364952" target="_blank">>ByRamaDev<</a>
       </div>
     </div>
   </div>
 </footer>
 
 <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox-plus-jquery.min.js"></script>
+
 </body>
 </html>

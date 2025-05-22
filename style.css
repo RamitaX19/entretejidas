@@ -68,20 +68,32 @@ body {
     color: #777;
   }
 
-  .mid {
-    background-color: #e2f8ff;
-    color: #444;
+  .inicio {
+    background-image: url('IMG_FONDO/lanas.png');
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
   }
-
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
   .TXT {
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-    padding-right: 0;
-    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1;
   }
   .TIT {
     text-align: center;
@@ -96,58 +108,85 @@ body {
     font-size: 17px;
     margin-top: 0;
   }
-
-  .lanas {
-    width: 1100px;
-    height: auto;
-    padding: 80px;
-    border-radius: 100px;
-  }
-
   .cursos {
-    scroll-margin-top: 140px;
+    justify-content: center;
+    scroll-margin-top: 80px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     padding: 15px;
-    padding-bottom: 30px;
-    background-color: #1111;
-    margin: 20%;
     margin-top: 50px;
     margin-bottom: 0;
+  }
+  .img_curso {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
     border-radius: 20px;
   }
-
+  .containerCURSO {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding: 30px;
+    background-color: #3333;
+    border-radius: 20px;
+  }
   .cursoTXT {
     max-width: 100%;
     display: flex;
+    flex: 1;
     flex-direction: column;
+    border-radius: 20px;
+    padding-bottom: 30px;
   }
 
   .cursoTIT {
     display: flex;
-    justify-content:center;
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
-    height: 20px;
-    width: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
     color: #444;
+    justify-content: center;
+    margin-bottom: 0;
   }
-
   .cursoPF {
-    display: flex;
+    display: grid;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
     font-size: 17px;
-    margin: 20px;
     color: #555;
+    background-color: #1111;
+    border-radius: 10px;
+    margin: 10px 10px;
+    padding: 0 30px;
   }
-
+  .PFC {
+    margin-bottom: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center
+  }
+  .PFC2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    text-align: center
+  }
+  .cursoPF2 {
+    display: grid;
+    text-align: center;
+    font-size: 17px;
+    color: #555;
+    background-color: #1111;
+    border-radius: 10px;
+    margin: 10px 10px;
+    padding: 0 20px;
+  }
   .botonWSP {
     padding: 10px 20px;
     margin: auto;
+    margin-top: 20px;
     font-size: 20px;
     background-color: #25d366;
     color: white;
@@ -163,7 +202,7 @@ body {
   }
 
   .trabajos {
-    scroll-margin-top: 90px;
+    scroll-margin-top: -20px;
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
@@ -180,78 +219,42 @@ body {
     text-align: center;
     padding-left: 1rem;
     padding-right: 1rem;
+    font-family: 'Raleway', sans-serif;
   }
 
   .textoTIT {
-    font-family: 'Montserrat', sans-serif;
     font-size: 35px;
   }
 
   .textoPF {
-    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
   }
 
-  .slider {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-  }
-  .sliderP {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-  }
-  
-  .slide-container {
-    position: relative;
-    width: 650px;
-    height:550px;
-    overflow: hidden;
-  }
-  .slide-containerP {
-    position: relative;
-    pointer-events: none;
-    width: 650px;
-    height:550px;
-    overflow: hidden;
-  }
-  
-  .slide {
-    position: absolute;
+  .galeriaTJ {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 25px;
+    padding: 20px;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+  .galeriaTJ img {
     width: 100%;
-    height: 90%;
-    opacity: 0;
-    transition: opacity 0.5s ease;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    cursor: zoom-in;
     border-radius: 10px;
+    transition: transform 0.3s ease;
   }
-  .slidePD {
-    position: absolute;
-    width: 100%;
-    height: 90%;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-    border-radius: 10px;
+  .galeriaTJ img:hover {
+  transform: scale(1.0);
+}
+  .extra-img {
+    display: contents;
   }
-  .slide.show {
-    opacity: 1;
-  }
-  .slidePD.show {
-    opacity: 1;
-  }
-  
-  button {
-    font-size: 25px;
-    cursor: pointer;
-  }
-
-  .prev, .next {
-    border: white; 
-  }
-  .prevP, .nextP {
-    border: white; 
+  .showMore{
+    display: none;
   }
   .tituloPD {
     text-align: center;
@@ -282,14 +285,15 @@ body {
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
 }
-    .botonFB {
-    padding: 10px 20px;
-    font-size: 20px;
-    background-color: #1877F2;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    transition: 0.5s ease, color 0.5s ease;
+  .botonFB {
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: #1877F2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s ease, color 0.5s ease;
   }
   .botonFB:hover {
     transform: scale(1.1);
@@ -301,6 +305,7 @@ body {
     color: white;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
     transition: 0.5s ease, color 0.5s ease;
   }
   .botonYT:hover {
@@ -313,6 +318,7 @@ body {
     color: white;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
     transition: 0.5s ease, color 0.5s ease;
   }
   .botonTK:hover {
@@ -325,6 +331,7 @@ body {
     color: white;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
     transition: 0.5s ease, color 0.5s ease;
   }
   .botonIG:hover {
@@ -336,12 +343,12 @@ body {
     padding-right: 4rem;
   }
   .containerVENTA {
-    background-color: #1111;
+    background-image:linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('IMG_FONDO/lanas.png');
     padding: 15px;
-    color: #444;
+    color: rgb(70, 70, 70);
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-        margin-top: 20px;
+    margin-top: 20px;
     margin-bottom: 20px;
   }
   .ventaTXT {
@@ -360,6 +367,7 @@ body {
   }
 
 .tienda {
+  scroll-margin-top: 100px;
   padding-left: 4rem;
   padding-right: 4rem;
 }
@@ -388,6 +396,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: white;
   background-color: rgb(132, 132, 255);
+  cursor: pointer;
   transition: 0.5s ease, color 0.5s ease;
 }
 .botonMAPS:hover {
@@ -535,4 +544,8 @@ body {
   text-decoration: underline;
   font-size: 13px;
   text-decoration: none;
+}
+.MiNum {
+  text-decoration: none;
+  color: white;
 }
